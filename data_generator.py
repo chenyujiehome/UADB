@@ -215,7 +215,7 @@ class DataGenerator():
         if self.dataset is None:
             assert X is not None and y is not None, "For customized dataset, you should provide the X and y!"
         else:
-            data = np.load(f'/home/covpreduser/Blob/weicao/datasets/ADBench/datasets/{self.dataset}.npz', allow_pickle=True)
+            data = np.load(f'./datasets/{self.dataset}.npz', allow_pickle=True)
             X = data['X']
             y = data['y']
 
