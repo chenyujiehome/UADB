@@ -9,7 +9,7 @@ class Config(object):
         self.seed = 0  
         self.log_file = 'none'
         # please set 'CUDA_VISIBLE_DEVICES' when calling python
-        self.device = 'cuda:0'
+        self.device = 'cpu'
 
         # ------- Data Arguments -------
         # select one of the 84 tabular datasets

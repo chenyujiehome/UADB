@@ -250,7 +250,7 @@ class DataGenerator():
         if realistic_synthetic_mode is not None:
             # we generate the dependency anomalies in advance, since the Vine Copula could spend too long for generation
             if realistic_synthetic_mode == 'dependency':
-                dataset_dict = np.load(f'/home/covpreduser/Blob/weicao/datasets/ADBench/datasets/Dependency_outlier/dependency_outlier_large.npz', allow_pickle=True)
+                dataset_dict = np.load(f'./datasets/Dependency_outlier/dependency_outlier_large.npz', allow_pickle=True)
                 dataset_dict = dataset_dict['dataset'].item()
 
                 if self.dataset in dataset_dict.keys():
